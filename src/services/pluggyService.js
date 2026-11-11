@@ -47,8 +47,9 @@ const verificarSincronizacao = async (itemId) => {
 }
 
 const criarConnectToken = async (clientUserId) => {
-    const connectToken = await pluggy.createConnectToken(undefined, {
+    const connectToken = await pluggy.createConnectToken(null, {
         clientUserId,
+        includeSandbox: true
     })
 
     return connectToken.accessToken
