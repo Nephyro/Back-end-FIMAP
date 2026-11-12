@@ -1,6 +1,7 @@
 // Import da biblioteca knex, utilizada para facilitar a comunicação com o banco de dados MySQL
 const knex = require('knex')
 const bcrypt = require('bcrypt')
+const SALT_ROUNDS = 10
 
 // Import do arquivo de configuração que contém as credenciais e parâmetros de conexão com o banco
 const knexConfig = require('../../Database_config_knex/KnexFile.js')
